@@ -1,5 +1,4 @@
 describe('get scroll offset', function() {
-
     it('should return a number', function() {
         expect(typeof getScrollOffset()).toEqual('number');
     });
@@ -22,18 +21,19 @@ describe('get scroll offset', function() {
 });
 
 
-function getScrollOffset() {
-    return 1;
-}
-
-function convertToOrientation(angle) {
-    if (angle === 0) {
-        return 'North';
-    } else if (angle === 90) {
-        return 'East';
-    } else if (angle === 180) {
-        return 'South';
-    } else {
-        return 'West';
+var controller = {
+    getScrollOffset: function() {
+        return 1;
+    },
+    convertToOrientation: function(angle) {
+        if (angle === 0) {
+            return 'North';
+        } else if (angle === 90) {
+            return 'East';
+        } else if (angle === 180) {
+            return 'South';
+        } else {
+            return 'West';
+        }
     }
 }
