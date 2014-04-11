@@ -1,37 +1,60 @@
 describe('get scroll offset', function() {
 
     it('should return a number', function() {
-        expect(typeof controller.getScrollOffset()).toEqual('number');
+        expect(typeof Controller.prototype.getScrollOffset()).toEqual('number');
     });
 
     it('should return "North"', function() {
-        expect(controller.convertToOrientation(0)).toEqual('North');
+        expect(Controller.prototype.convertToOrientation(0)).toEqual('North');
     });
     it('should return "East"', function() {
-        expect(controller.convertToOrientation(90)).toEqual('East');
+        expect(Controller.prototype.convertToOrientation(90)).toEqual('East');
     });
     it('should return "South"', function() {
-        expect(controller.convertToOrientation(180)).toEqual('South');
+        expect(Controller.prototype.convertToOrientation(180)).toEqual('South');
     });
     it('should return "West"', function() {
-        expect(controller.convertToOrientation(270)).toEqual('West');
+        expect(Controller.prototype.convertToOrientation(270)).toEqual('West');
+    });
+
+    it('should return 0 if Degree is over 359', function() {
+        expect(Controller.prototype.resetDegrees(360)).toEqual(0);
     });
 });
 
 
-var controller = {
-    getScrollOffset: function() {
-        return 1;
-    },
-    convertToOrientation: function(angle) {
-        if (angle === 0) {
-            return 'North';
-        } else if (angle === 90) {
-            return 'East';
-        } else if (angle === 180) {
-            return 'South';
-        } else {
-            return 'West';
-        }
-    }
+
+
+
+
+var Controller = function() {
+
 }
+
+Controller.prototype.angleToOrientationMap = {
+    0: 'North',
+    22: 'North-North-East',
+    45: 'North-East',
+    67: 'East-North-East',
+    90: 'East',
+    112: 'East-South-East',
+    135: 'South-East',
+    157: 'South-South-East',
+    180: 'South',
+    202: 'South-South-West',
+    224: 'South-West',
+    246: 'West-South-West',
+    270: 'West',
+    292: 'West-North-West',
+    315: 'North-West',
+    337: 'North-North-West'
+};
+
+Controller.prototype.getScrollOffset = function() {
+    return 1;
+}
+
+Controller.prototype.convertToOrientation = function(angle) {
+    return this.angleToOrientationMap[angle];
+}
+
