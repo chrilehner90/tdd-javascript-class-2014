@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="692ff510-5554-4294-8d4c-75e7074547ca" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/anim/main.js" afterPath="$PROJECT_DIR$/src/anim/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/anim/testSpec.js" afterPath="$PROJECT_DIR$/src/anim/testSpec.js" />
     </list>
     <ignored path="projekt.iws" />
@@ -28,7 +29,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/anim/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="35" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+            <state line="0" column="31" selection-start="0" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
               <folding />
             </state>
           </provider>
@@ -37,7 +38,7 @@
       <file leaf-file-name="testSpec.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/anim/testSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="1504" selection-end="1504" vertical-scroll-proportion="0.8105263" vertical-offset="515" max-vertical-offset="990">
+            <state line="58" column="1" selection-start="1502" selection-end="1502" vertical-scroll-proportion="1.831579" vertical-offset="0" max-vertical-offset="1080">
               <folding />
             </state>
           </provider>
@@ -313,7 +314,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jQueryImageMock.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.07377049" vertical-offset="45" max-vertical-offset="1035" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.07377049" vertical-offset="45" max-vertical-offset="1035">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/anim/index.html">
@@ -351,13 +354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/anim/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="35" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mockExampleSpec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="40" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.0" vertical-offset="508" max-vertical-offset="1155">
@@ -365,9 +361,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/anim/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="31" selection-start="0" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/anim/testSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="1504" selection-end="1504" vertical-scroll-proportion="0.8105263" vertical-offset="515" max-vertical-offset="990">
+        <state line="58" column="1" selection-start="1502" selection-end="1502" vertical-scroll-proportion="1.831579" vertical-offset="0" max-vertical-offset="1080">
           <folding />
         </state>
       </provider>

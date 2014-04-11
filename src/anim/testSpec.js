@@ -58,3 +58,10 @@ Controller.prototype.convertToOrientation = function(angle) {
     return this.angleToOrientationMap[angle];
 }
 
+Controller.prototype.resetDegrees = function(angle) {
+    if(angle > 359) {
+        angle = angle - 360;
+    }
+    return angle;
+    console.log(angle);
+}
