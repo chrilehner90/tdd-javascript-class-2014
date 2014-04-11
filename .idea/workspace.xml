@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="692ff510-5554-4294-8d4c-75e7074547ca" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/anim/main.js" afterPath="$PROJECT_DIR$/src/anim/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/anim/testSpec.js" afterPath="$PROJECT_DIR$/src/anim/testSpec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -29,7 +30,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/anim/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="35" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+            <state line="8" column="35" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
               <folding />
             </state>
           </provider>
@@ -38,7 +39,7 @@
       <file leaf-file-name="testSpec.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/anim/testSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.19672132" vertical-offset="0" max-vertical-offset="610">
+            <state line="7" column="6" selection-start="266" selection-end="266" vertical-scroll-proportion="0.2625" vertical-offset="0" max-vertical-offset="400">
               <folding />
             </state>
           </provider>
@@ -93,9 +94,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/anim/main.js" />
         <option value="$PROJECT_DIR$/src/js-basics.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/anim/main.js" />
         <option value="$PROJECT_DIR$/src/anim/testSpec.js" />
       </list>
     </option>
@@ -271,11 +272,11 @@
     <frame x="4" y="27" width="1260" height="707" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -345,13 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mockExampleSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="3" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.0" vertical-offset="545" max-vertical-offset="1155">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/refactoring.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="840">
@@ -361,14 +355,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/anim/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="35" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+        <state line="8" column="35" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mockExampleSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="3" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1155">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/anim/testSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.19672132" vertical-offset="0" max-vertical-offset="610">
+        <state line="7" column="6" selection-start="266" selection-end="266" vertical-scroll-proportion="0.2625" vertical-offset="0" max-vertical-offset="400">
           <folding />
         </state>
       </provider>
