@@ -27,8 +27,13 @@ function getScrollOffset() {
 }
 
 function convertToOrientation(angle) {
-    if(angle === 0) {
+    if (angle === 0) {
         return 'North';
+    } else if (angle === 90) {
+        return 'East';
+    } else if (angle === 180) {
+        return 'South';
+    } else {
+        return 'West';
     }
-    return 'South'
 }

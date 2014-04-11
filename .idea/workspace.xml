@@ -37,7 +37,7 @@
       <file leaf-file-name="testSpec.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/anim/testSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="7" selection-start="492" selection-end="492" vertical-scroll-proportion="0.1875" vertical-offset="135" max-vertical-offset="600">
+            <state line="29" column="7" selection-start="705" selection-end="705" vertical-scroll-proportion="0.55" vertical-offset="215" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
@@ -367,7 +367,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/anim/testSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="492" selection-end="492" vertical-scroll-proportion="0.1875" vertical-offset="135" max-vertical-offset="600">
+        <state line="29" column="7" selection-start="705" selection-end="705" vertical-scroll-proportion="0.55" vertical-offset="215" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
