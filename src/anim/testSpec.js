@@ -7,8 +7,14 @@ describe('get scroll offset', function() {
     it('should return "North"', function() {
         expect(convertToOrientation(0)).toEqual('North');
     });
+    it('should return "East"', function() {
+        expect(convertToOrientation(90)).toEqual('East');
+    });
     it('should return "South"', function() {
         expect(convertToOrientation(180)).toEqual('South');
+    });
+    it('should return "West"', function() {
+        expect(convertToOrientation(270)).toEqual('West');
     });
 
 
