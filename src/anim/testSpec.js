@@ -1,7 +1,4 @@
 describe('get scroll offset', function() {
-    beforeEach(function() {
-        spyOn(controller, "getScrollOffset").andReturn(1);
-    });
 
     it('should return a number', function() {
         expect(typeof controller.getScrollOffset()).toEqual('number');
