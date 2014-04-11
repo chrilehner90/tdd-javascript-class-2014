@@ -1,23 +1,24 @@
 describe('get scroll offset', function() {
+    beforeEach(function() {
+        spyOn(controller, "getScrollOffset").andReturn(1);
+    });
+
     it('should return a number', function() {
-        expect(typeof getScrollOffset()).toEqual('number');
+        expect(typeof controller.getScrollOffset()).toEqual('number');
     });
 
     it('should return "North"', function() {
-        expect(convertToOrientation(0)).toEqual('North');
+        expect(controller.convertToOrientation(0)).toEqual('North');
     });
     it('should return "East"', function() {
-        expect(convertToOrientation(90)).toEqual('East');
+        expect(controller.convertToOrientation(90)).toEqual('East');
     });
     it('should return "South"', function() {
-        expect(convertToOrientation(180)).toEqual('South');
+        expect(controller.convertToOrientation(180)).toEqual('South');
     });
     it('should return "West"', function() {
-        expect(convertToOrientation(270)).toEqual('West');
+        expect(controller.convertToOrientation(270)).toEqual('West');
     });
-
-
-
 });
 
 
