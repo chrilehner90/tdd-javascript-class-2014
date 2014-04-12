@@ -21,7 +21,7 @@ describe('convert angle to orientation', function() {
         expect(Controller.prototype.convertToOrientation(270)).toEqual('West');
     });
     it('should return 111 if Degree is 111', function() {
-        expect(Controller.prototype.convertToOrientation(111)).toEqual(111);
+        expect(Controller.prototype.convertToOrientation(111)).toEqual('111°');
     });
 });
 
