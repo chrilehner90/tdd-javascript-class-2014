@@ -1,4 +1,4 @@
-var jQuery = require('jQuery');
+var jQuery = require('jQuery')(window);
 
 /*
 - wait until image is loaded

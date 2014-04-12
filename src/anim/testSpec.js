@@ -1,43 +1,48 @@
-var jQuery = require('jquery');
+describe('Compass test suite', function() {
+    beforeEach(function() {
+       this.compass = new Compass();
 
-describe('get scroll offset', function() {
-
-    it('should return a number', function() {
-        expect(typeof Controller.prototype.getScrollOffset()).toEqual('number');
     });
+
+    describe('get scroll offset', function() {
+
+        it('should return a number', function() {
+            expect(typeof this.compass.getScrollOffset()).toEqual('number');
+        });
+    });
+
+
+    describe('convert angle to orientation', function() {
+
+        it('should return "North"', function() {
+            expect(this.compass.convertToOrientation(0)).toEqual('North');
+        });
+        it('should return "East"', function() {
+            expect(this.compass.convertToOrientation(90)).toEqual('East');
+        });
+        it('should return "South"', function() {
+            expect(this.compass.convertToOrientation(180)).toEqual('South');
+        });
+        it('should return "West"', function() {
+            expect(this.compass.convertToOrientation(270)).toEqual('West');
+        });
+        it('should return 111 if Degree is 111', function() {
+            expect(this.compass.convertToOrientation(111)).toEqual('111°');
+        });
+    });
+
+    describe('reset degrees after overflow (angle > 359 deg)', function() {
+
+        it('should return 0 if Degree is over 359', function() {
+            expect(this.compass.resetDegrees(360)).toEqual("North");
+        });
+
+        it('should return 0 if Degree is over 359', function() {
+            expect(this.compass.resetDegrees(1000)).toEqual("280°");
+        });
+    });
+
 });
-
-
-describe('convert angle to orientation', function() {
-
-    it('should return "North"', function() {
-        expect(Controller.prototype.convertToOrientation(0)).toEqual('North');
-    });
-    it('should return "East"', function() {
-        expect(Controller.prototype.convertToOrientation(90)).toEqual('East');
-    });
-    it('should return "South"', function() {
-        expect(Controller.prototype.convertToOrientation(180)).toEqual('South');
-    });
-    it('should return "West"', function() {
-        expect(Controller.prototype.convertToOrientation(270)).toEqual('West');
-    });
-    it('should return 111 if Degree is 111', function() {
-        expect(Controller.prototype.convertToOrientation(111)).toEqual('111°');
-    });
-});
-
-describe('reset degrees after overflow (angle > 359 deg)', function() {
-
-    it('should return 0 if Degree is over 359', function() {
-        expect(Controller.prototype.resetDegrees(360)).toEqual("North");
-    });
-
-    it('should return 0 if Degree is over 359', function() {
-        expect(Controller.prototype.resetDegrees(1000)).toEqual("280°");
-    });
-});
-
 
 var Compass = function() {
 
@@ -67,11 +72,13 @@ Compass.prototype.getScrollOffset = function() {
 }
 
 Compass.prototype.convertToOrientation = function(angle) {
+    var output = undefined;
     if (this.angleToOrientationMap[angle] !== undefined) {
-        return this.angleToOrientationMap[angle];
+        output = this.angleToOrientationMap[angle];
     } else {
-        return angle + '°';
+        output = angle + '°';
     }
+    return output;
 }
 
 Compass.prototype.resetDegrees = function(angle) {
@@ -81,4 +88,8 @@ Compass.prototype.resetDegrees = function(angle) {
     }
     return this.convertToOrientation(angle);
 }
+
+
+
+
 
