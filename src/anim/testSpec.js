@@ -65,7 +65,12 @@ Controller.prototype.getScrollOffset = function() {
 }
 
 Controller.prototype.convertToOrientation = function(angle) {
-    return this.angleToOrientationMap[angle];
+
+    if (this.angleToOrientationMap[angle] !== undefined) {
+        return this.angleToOrientationMap[angle];
+    } else {
+        return angle;
+    }
 }
 
 Controller.prototype.resetDegrees = function(angle) {
