@@ -39,11 +39,11 @@ describe('reset degrees after overflow (angle > 359 deg)', function() {
 });
 
 
-var Controller = function() {
+var Compass = function() {
 
 }
 
-Controller.prototype.angleToOrientationMap = {
+Compass.prototype.angleToOrientationMap = {
     0: 'North',
     22: 'North-North-East',
     45: 'North-East',
@@ -62,11 +62,11 @@ Controller.prototype.angleToOrientationMap = {
     337: 'North-North-West'
 };
 
-Controller.prototype.getScrollOffset = function() {
+Compass.prototype.getScrollOffset = function() {
     return 1;
 }
 
-Controller.prototype.convertToOrientation = function(angle) {
+Compass.prototype.convertToOrientation = function(angle) {
     if (this.angleToOrientationMap[angle] !== undefined) {
         return this.angleToOrientationMap[angle];
     } else {
@@ -74,10 +74,11 @@ Controller.prototype.convertToOrientation = function(angle) {
     }
 }
 
-Controller.prototype.resetDegrees = function(angle) {
+Compass.prototype.resetDegrees = function(angle) {
     if(angle > 359) {
         var counter = Math.floor(angle / 360);
         angle = angle - (360 * counter);
     }
     return this.convertToOrientation(angle);
 }
+
