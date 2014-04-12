@@ -20,6 +20,9 @@ describe('convert angle to orientation', function() {
     it('should return "West"', function() {
         expect(Controller.prototype.convertToOrientation(270)).toEqual('West');
     });
+    it('should return 111 if Degree is 111', function() {
+        expect(Controller.prototype.convertToOrientation(111)).toEqual(111);
+    });
 });
 
 describe('reset degrees after overflow (angle > 359 deg)', function() {
@@ -32,8 +35,6 @@ describe('reset degrees after overflow (angle > 359 deg)', function() {
         expect(Controller.prototype.resetDegrees(1000)).toEqual(280);
     });
 });
-
-
 
 
 var Controller = function() {
