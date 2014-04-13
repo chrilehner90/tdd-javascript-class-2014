@@ -38,7 +38,8 @@ describe('Compass test suite', function() {
         });
 
         it('should call function convertToOrientation', function() {
-            expect(this.compass.convertToOrientation).toHaveBeenCalled();
+            this.compass.resetDegrees(360);
+            expect(this.compass.convertToOrientation).toHaveBeenCalledWith(0);
         });
     });
 
