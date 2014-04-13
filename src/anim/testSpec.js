@@ -29,6 +29,17 @@ describe('Compass test suite', function() {
         it('should return 111 if Degree is 111', function() {
             expect(this.compass.convertToOrientation(111)).toEqual('111°');
         });
+
+    });
+
+    describe('spy on convertToOrientation', function() {
+        beforeEach(function() {
+            spyOn(this.compass, "convertToOrientation");
+        });
+
+        it('should call function convertToOrientation', function() {
+            expect(this.compass.convertToOrientation).toHaveBeenCalled();
+        });
     });
 
     describe('reset degrees after overflow (angle > 359 deg)', function() {
