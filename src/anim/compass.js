@@ -43,7 +43,18 @@ Compass.prototype.setDegrees = function(angle) {
         var counter = Math.floor(angle / 360);
         angle = angle - (360 * counter);
     }
-    return this.convertToOrientation(angle);
+    orientation = this.convertToOrientation(angle);
+    this.showText(orientation)
+    this.rotateImage(angle);
+    return orientation;
+}
+
+Compass.prototype.showText = function(text) {
+    jQuery('#' + this.textID).html(text);
+}
+
+Compass.prototype.rotateImage = function(angle) {
+    jQuery('#' + this.imageID).css('transform', 'rotate('+(angle/(jQuery(window).height())*90) + 'deg)');
 }
 
 module.exports = Compass;

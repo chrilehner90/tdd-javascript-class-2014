@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="692ff510-5554-4294-8d4c-75e7074547ca" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/anim/compass.js" afterPath="$PROJECT_DIR$/src/anim/compass.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/anim/main.js" afterPath="$PROJECT_DIR$/src/anim/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/anim/testSpec.js" afterPath="$PROJECT_DIR$/src/anim/testSpec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="projekt.iws" />
@@ -28,10 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/anim/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="3" selection-start="455" selection-end="455" vertical-scroll-proportion="0.42533082" vertical-offset="0" max-vertical-offset="529">
+            <state line="17" column="3" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compass.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/anim/compass.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="93" selection-start="1464" selection-end="1493" vertical-scroll-proportion="0.8221344" vertical-offset="424" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -40,7 +48,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/anim/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="7" selection-start="399" selection-end="399" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="330">
+            <state line="12" column="29" selection-start="352" selection-end="364" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
@@ -49,7 +57,7 @@
       <file leaf-file-name="testSpec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/anim/testSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="29" selection-start="3337" selection-end="3337" vertical-scroll-proportion="0.0" vertical-offset="1121" max-vertical-offset="1890">
+            <state line="60" column="0" selection-start="2171" selection-end="2171" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="1200">
               <folding />
             </state>
           </provider>
@@ -67,7 +75,7 @@
       <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="405">
+            <state line="16" column="30" selection-start="464" selection-end="464" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="405">
               <folding />
             </state>
           </provider>
@@ -112,6 +120,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/anim/testSpec.js" />
         <option value="$PROJECT_DIR$/src/anim/main.js" />
+        <option value="$PROJECT_DIR$/src/anim/compass.js" />
       </list>
     </option>
   </component>
@@ -225,14 +234,6 @@
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -243,15 +244,23 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -298,11 +307,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -322,6 +331,55 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/anim/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="3" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/anim/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="7" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/anim/testSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="29" selection-start="3337" selection-end="3337" vertical-scroll-proportion="0.0" vertical-offset="1545" max-vertical-offset="1890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mockExampleSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="4" selection-start="1749" selection-end="1806" vertical-scroll-proportion="0.0" vertical-offset="626" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="4" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jasmineExampleSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="5" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="1005" max-vertical-offset="2340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jQueryImageMock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="0" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0" vertical-offset="506" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/anim/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="3" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
@@ -345,9 +403,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/refactoring.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="840">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="840" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jasmineExampleSpec.js">
@@ -387,9 +443,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/refactoring.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="840">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="840" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jasmineExampleSpec.js">
@@ -418,9 +472,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/refactoring.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="840">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="840" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jasmineExampleSpec.js">
@@ -446,28 +498,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="405">
+        <state line="16" column="30" selection-start="464" selection-end="464" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="405">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/anim/testSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="29" selection-start="3337" selection-end="3337" vertical-scroll-proportion="0.0" vertical-offset="1121" max-vertical-offset="1890">
+        <state line="60" column="0" selection-start="2171" selection-end="2171" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/anim/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="7" selection-start="399" selection-end="399" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="330">
+        <state line="12" column="29" selection-start="352" selection-end="364" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="330">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/anim/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="3" selection-start="455" selection-end="455" vertical-scroll-proportion="0.42533082" vertical-offset="0" max-vertical-offset="529">
+        <state line="17" column="3" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/anim/compass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="93" selection-start="1464" selection-end="1493" vertical-scroll-proportion="0.8221344" vertical-offset="424" max-vertical-offset="975">
           <folding />
         </state>
       </provider>

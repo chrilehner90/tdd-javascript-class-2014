@@ -1,7 +1,8 @@
 var jQuery = require('jquery');
-var compass = require('./compass');
+var Compass = require('./compass');
 
 
+var compass = new Compass("directionHeading", "compassImage");
 
 var imageEl = jQuery(new Image());
 imageEl
@@ -12,7 +13,6 @@ imageEl
   .attr('src', '/img/compass.png');
 
 jQuery(document).scroll(function() {
-    console.log(jQuery(document).scrollTop());
-    var angle = jQuery(document).scrollTop();
-    jQuery('#compassImage').css('transform', 'rotate('+(angle/(jQuery(window).height())*10) + 'deg)');
+    var scrollValue = jQuery(document).scrollTop();
+    compass.setDegrees(scrollValue);
 });
