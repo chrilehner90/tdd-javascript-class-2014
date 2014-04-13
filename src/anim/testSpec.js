@@ -38,19 +38,19 @@ describe('Compass test suite', function() {
         });
 
         it('should call function convertToOrientation', function() {
-            this.compass.resetDegrees(360);
+            this.compass.setDegrees(360);
             expect(this.compass.convertToOrientation).toHaveBeenCalledWith(0);
         });
     });
 
-    describe('reset degrees after overflow (angle > 359 deg)', function() {
+    describe('set degrees after overflow (angle > 359 deg)', function() {
 
         it('should return 0 if Degree is over 359', function() {
-            expect(this.compass.resetDegrees(360)).toEqual("North");
+            expect(this.compass.setDegrees(360)).toEqual("North");
         });
 
         it('should return 0 if Degree is over 359', function() {
-            expect(this.compass.resetDegrees(1000)).toEqual("280°");
+            expect(this.compass.setDegrees(1000)).toEqual("280°");
         });
     });
 
@@ -93,7 +93,7 @@ Compass.prototype.convertToOrientation = function(angle) {
     return output;
 }
 
-Compass.prototype.resetDegrees = function(angle) {
+Compass.prototype.setDegrees = function(angle) {
     if(angle > 359) {
         var counter = Math.floor(angle / 360);
         angle = angle - (360 * counter);
