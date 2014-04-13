@@ -16,7 +16,6 @@
     "jasmine-matchers": "^0.2.3",
     "jasmine-node": "^1.14.3",
     "beefy": "~1.1.0",
-    "browserify": "~3.33.0",
-    "karma": "~0.12.6"
+    "browserify": "~3.33.0"
   }
 }

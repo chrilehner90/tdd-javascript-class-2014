@@ -11,6 +11,19 @@ describe('Compass test suite', function() {
         });
     });
 
+    describe('convert scroll Offset to angle', function() {
+
+        it('should return 90° if scroll Offset is 400', function() {
+            expect(this.compass.getScrollOffset(400, 400)).toEqual(90);
+        });
+        it('should return 180° if scroll Offset is 800', function() {
+            expect(this.compass.getScrollOffset(800, 400)).toEqual(180);
+        });
+        it('should return 270° if scroll Offset is 1200', function() {
+            expect(this.compass.getScrollOffset(1200, 400)).toEqual(270);
+        });
+    });
+
 
     describe('convert angle to orientation', function() {
 
@@ -18,16 +31,16 @@ describe('Compass test suite', function() {
             expect(this.compass.convertToOrientation(0)).toEqual('North');
         });
         it('should return "East"', function() {
-            expect(this.compass.convertToOrientation(90)).toEqual('East');
+            expect(this.compass.convertToOrientation(this.compass.getScrollOffset(400, 400))).toEqual('East');
         });
         it('should return "South"', function() {
-            expect(this.compass.convertToOrientation(180)).toEqual('South');
+            expect(this.compass.convertToOrientation(this.compass.getScrollOffset(800, 400))).toEqual('South');
         });
         it('should return "West"', function() {
-            expect(this.compass.convertToOrientation(270)).toEqual('West');
+            expect(this.compass.convertToOrientation(this.compass.getScrollOffset(1200, 400))).toEqual('West');
         });
-        it('should return 111 if Degree is 111', function() {
-            expect(this.compass.convertToOrientation(111)).toEqual('111°');
+        it('should return 111° if scrollOffset is 494', function() {
+            expect(this.compass.convertToOrientation(this.compass.getScrollOffset(494, 400))).toEqual('111°');
         });
 
     });
@@ -79,8 +92,8 @@ Compass.prototype.angleToOrientationMap = {
     337: 'North-North-West'
 };
 
-Compass.prototype.getScrollOffset = function() {
-    return 1;
+Compass.prototype.getScrollOffset = function(scrollOffset, height) {
+    return (Math.floor(scrollOffset/height * 90));
 }
 
 Compass.prototype.convertToOrientation = function(angle) {
