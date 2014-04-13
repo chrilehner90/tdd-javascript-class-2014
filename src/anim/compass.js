@@ -24,25 +24,26 @@ Compass.prototype.angleToOrientationMap = {
     337: 'North-North-West'
 };
 
-Compass.prototype.getScrollOffset = function(scrollOffset, height) {
-    return (Math.floor(scrollOffset/height * 90));
+Compass.prototype.getScrollOffset = function(scrollOffset) {
+    return scrollOffset/10;
 }
 
 Compass.prototype.convertToOrientation = function(angle) {
+    if(angle > 359) {
+        var counter = Math.floor(angle / 360);
+        angle = angle - (360 * counter);
+    }
     var output = undefined;
     if (this.angleToOrientationMap[angle] !== undefined) {
         output = this.angleToOrientationMap[angle];
     } else {
-        output = angle + '°';
+        output = Math.floor(angle) + '°';
     }
     return output;
 }
 
 Compass.prototype.setDegrees = function(angle) {
-    if(angle > 359) {
-        var counter = Math.floor(angle / 360);
-        angle = angle - (360 * counter);
-    }
+    angle = this.getScrollOffset(angle);
     orientation = this.convertToOrientation(angle);
     this.showText(orientation)
     this.rotateImage(angle);
@@ -54,7 +55,7 @@ Compass.prototype.showText = function(text) {
 }
 
 Compass.prototype.rotateImage = function(angle) {
-    jQuery('#' + this.imageID).css('transform', 'rotate('+(angle/(jQuery(window).height())*90) + 'deg)');
+    jQuery('#' + this.imageID).css('transform', 'rotate('+ angle + 'deg)');
 }
 
 module.exports = Compass;
