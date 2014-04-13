@@ -1,4 +1,6 @@
 var jQuery = require('jquery');
+var compass = require('./compass');
+
 
 
 var imageEl = jQuery(new Image());
