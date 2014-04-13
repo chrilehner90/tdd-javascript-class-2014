@@ -54,19 +54,19 @@ describe('Compass test suite', function() {
         });
 
         it('should call function convertToOrientation', function() {
-            this.compass.setDegrees(360);
-            expect(this.compass.convertToOrientation).toHaveBeenCalledWith(0);
+            this.compass.getOrientation(360);
+            expect(this.compass.convertToOrientation).toHaveBeenCalledWith(360);
         });
     });
 
     describe('set degrees after overflow (angle > 359 deg)', function() {
 
         it('should return 0 if Degree is over 359', function() {
-            expect(this.compass.setDegrees(360)).toEqual("North");
+            expect(this.compass.getOrientation(360)).toEqual("North");
         });
 
         it('should return 0 if Degree is over 359', function() {
-            expect(this.compass.setDegrees(1000)).toEqual("280°");
+            expect(this.compass.getOrientation(1000)).toEqual("280°");
         });
     });
 

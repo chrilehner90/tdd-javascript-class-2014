@@ -3,26 +3,26 @@ var jQuery = require("jquery");
 var Compass = function(textID, imageID) {
     this.textID = textID;
     this.imageID = imageID;
+    this.angle = 0;
+    this.angleToOrientationMap = {
+        0: 'North',
+        22: 'North-North-East',
+        45: 'North-East',
+        67: 'East-North-East',
+        90: 'East',
+        112: 'East-South-East',
+        135: 'South-East',
+        157: 'South-South-East',
+        180: 'South',
+        202: 'South-South-West',
+        224: 'South-West',
+        246: 'West-South-West',
+        270: 'West',
+        292: 'West-North-West',
+        315: 'North-West',
+        337: 'North-North-West'
+    };
 }
-
-Compass.prototype.angleToOrientationMap = {
-    0: 'North',
-    22: 'North-North-East',
-    45: 'North-East',
-    67: 'East-North-East',
-    90: 'East',
-    112: 'East-South-East',
-    135: 'South-East',
-    157: 'South-South-East',
-    180: 'South',
-    202: 'South-South-West',
-    224: 'South-West',
-    246: 'West-South-West',
-    270: 'West',
-    292: 'West-North-West',
-    315: 'North-West',
-    337: 'North-North-West'
-};
 
 Compass.prototype.getScrollOffset = function(scrollOffset) {
     return scrollOffset/10;
@@ -42,12 +42,27 @@ Compass.prototype.convertToOrientation = function(angle) {
     return output;
 }
 
-Compass.prototype.setDegrees = function(angle) {
-    angle = this.getScrollOffset(angle);
-    orientation = this.convertToOrientation(angle);
+Compass.prototype.getOrientation = function(angle) {
+    var angle = this.getAngleFromScrollOffset(angle);
+    var orientation = this.getOrientation(angle);
+
+    return orientation;
+}
+
+Compass.prototype.getOrientation = function(angle) {
+    return this.convertToOrientation(angle);
+}
+
+Compass.prototype.getAngleFromScrollOffset = function(scrollOffset) {
+    return this.getScrollOffset(scrollOffset);
+}
+
+Compass.prototype.handleScrollEvent = function(scrollOffset) {
+    var angle = this.getAngleFromScrollOffset(scrollOffset);
+    var orientation = this.getOrientation(angle);
     this.showText(orientation)
     this.rotateImage(angle);
-    return orientation;
+
 }
 
 Compass.prototype.showText = function(text) {

@@ -14,5 +14,5 @@ imageEl
 
 jQuery(document).scroll(function() {
     var scrollValue = jQuery(document).scrollTop();
-    compass.setDegrees(scrollValue);
+    compass.handleScrollEvent(scrollValue);
 });
